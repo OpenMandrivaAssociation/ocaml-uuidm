@@ -1,13 +1,13 @@
 Name:           ocaml-uuidm
 Version:        0.9.3
-Release:        %mkrel 1
+Release:        2
 Summary:        Universally unique identifiers (UUIDs) for OCaml
 License:        BSD
 Group:          Development/Other
 URL:            http://erratique.ch/software/uuidm
 Source0:        http://erratique.ch/software/uuidm/releases/uuidm-%{version}.tbz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml-findlib
+BuildRequires:  ocaml
 
 %description
 Uuidm is an OCaml module implementing 128 bits universally unique identifiers 
@@ -30,11 +30,7 @@ developing applications that use %{name}.
 ./build
 
 %install
-rm -rf %{buildroot}
 INSTALLDIR=%{buildroot}/%{_libdir}/ocaml/uuidm ./build install 
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
@@ -51,4 +47,11 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/uuidm/*.cmx
 %{_libdir}/ocaml/uuidm/*.ml
 %{_libdir}/ocaml/uuidm/*.mli
+
+
+
+%changelog
+* Tue Sep 22 2009 Florent Monnier <blue_prawn@mandriva.org> 0.9.3-1mdv2010.0
++ Revision: 447090
+- import ocaml-uuidm
 
