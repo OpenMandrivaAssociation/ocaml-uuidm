@@ -4,7 +4,7 @@
 Summary:	Universally unique identifiers (UUIDs) for OCaml
 Name:		ocaml-uuidm
 Version:	0.9.5
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Other
 Url:		http://erratique.ch/software/uuidm
