@@ -7,7 +7,7 @@ Version:	0.9.5
 Release:	2
 License:	BSD
 Group:		Development/Other
-Url:		http://erratique.ch/software/uuidm
+Url:		https://erratique.ch/software/uuidm
 Source0:	http://erratique.ch/software/uuidm/releases/uuidm-%{version}.tbz
 BuildRequires:	ocaml
 BuildRequires:	ocaml-findlib
